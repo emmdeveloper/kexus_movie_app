@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+body {
+}
+.gridSystem {
+  display: flex;
+  font-family: Inter;
+  gap: 1.25rem;
+}
+.borderStyle {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+/* .searchBorder{
+    border: 1px solid gray;
+} */
+.layoutGradient {
+  @apply bg-gradient-to-b from-cyan-400 to-blue-500;
+}
+.btnGradient {
+  @apply bg-gradient-to-r from-cyan-400 to-blue-500;
+}
