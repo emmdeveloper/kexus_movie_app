@@ -11,7 +11,8 @@ const SearchMovies = ({ setMovies }) => {
   const [search, setSearch] = useState("");
   console.log(search);
 
-  const handleSearch = async () => {
+  const handleSearch = async (e) => {
+    e.preventDefault();
     const moviesData = await fetchData(
       `https://api.themoviedb.org/3/search/movie?query=${search}&include_adult=false&language=en-US&page=1`,
       theMovieDBoptions
@@ -38,10 +39,11 @@ const SearchMovies = ({ setMovies }) => {
   };
 
   return (
-    <motion.section
+    <motion.form
       initial="hidden"
       animate="visible"
       transition={2}
+      onSubmit={handleSearch}
       variants={variants}
       className="pt-3">
       <input
@@ -51,11 +53,12 @@ const SearchMovies = ({ setMovies }) => {
         className="w-full p-3 rounded-lg  lg:w-[900px] dark:bg-gray-900 "
       />
       <button
+        type="submit"
         className="p-3 bg-blue-500 btnGradient font-medium text-white rounded-lg"
         onClick={handleSearch}>
         Search
       </button>
-    </motion.section>
+    </motion.form>
   );
 };
 

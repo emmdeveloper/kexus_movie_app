@@ -6,9 +6,9 @@ import Movies from "@/components/Movies";
 export default function Home() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
-    const fetchMoviesData = async () => {
+    const fetchMoviesData = async (number) => {
       const moviesData = await fetchData(
-        "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc",
+        `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${number}&sort_by=popularity.desc`,
         theMovieDBoptions
       );
       const fData = moviesData.results;
