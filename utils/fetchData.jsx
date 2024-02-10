@@ -20,7 +20,7 @@ export const theMovieDBoptions = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2M2Q1NDlmYmZhMjNkZjU2NDA5NTBiOWNiNDFjNzYxNiIsInN1YiI6IjY1NTYxZWI1ZDRmZTA0MDBmZTA2NmU5MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ZXw4oO6bbpBicfOLvxdMjFrSwbjCUWbBYTSr9EXyVhQ",
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0YWE0OWQ1NDIwMDBhYTgwMjk3ZjdmMjJkMWE4NDcyNSIsInN1YiI6IjY1NTYxZWI1ZDRmZTA0MDBmZTA2NmU5MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.daLTI-xAVX98dSa4YGC46NWVbi61LNB5m0gJAx8S-0c",
   },
 };
 
